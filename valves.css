@@ -1,0 +1,67 @@
+.master {
+  margin-left:6px;  
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 16px;
+  margin: 0 10px;
+}
+
+/* Hide default HTML checkbox */
+.switch input[type="checkbox"] {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;  
+  background: radial-gradient(ellipse at center, rgba(359,0,0,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%);
+  -webkit-transition: .4s;
+  transition: .4s;
+  
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 1px;
+  bottom: 1px;
+  background: linear-gradient(135deg, rgba(76,76,76,1) 0%,rgba(89,89,89,1) 12%,rgba(102,102,102,1) 25%,
+  rgba(71,71,71,1) 39%,rgba(44,44,44,1) 48%,rgba(0,0,0,1) 54%,rgba(17,17,17,1) 60%,rgba(43,43,43,1) 76%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background: radial-gradient(ellipse at center, rgba(0,359,0,1) 0%,rgba(2,143,34,1) 44%,rgba(109,0,25,1) 100%);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #111;
+}
+
+input:checked + .slider:before {
+  transform: translateX(16px);
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor*/
+background: linear-gradient(135deg, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%);  
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 12px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

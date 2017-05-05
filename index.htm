@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="valves.css">
+</head>
+
+<body>
+
+<a href="/station_status">Check Stations</a>
+<a href="/edit">Edit</a>
+<br>
+
+Station 1<label class="switch"><input type="checkbox" id="s1" data-station="1"><div class="slider round"></div></label>
+  <input type="number" id="s1minutes" min="0" value="0">minutes<input type="number" id="s1seconds" min="0" max="59" value="0">seconds<span id="s1Status"></span><span id="s1timer" data-timer=0></span><br>
+
+Station 2<label class="switch"><input type="checkbox" id="s2" data-station="2"><div class="slider round"></div></label>
+  <input type="number" id="s2minutes" min="0" value="0">minutes<input type="number" id="s2seconds" min="0" max="59" value="0">seconds<span id="s2Status"></span><span id="s2timer" data-timer=0></span><br>
+
+Station 3<label class="switch"><input type="checkbox" id="s3" data-station="3"><div class="slider round"></div></label>
+  <input type="number" id="s3minutes" min="0" value="0">minutes<input type="number" id="s3seconds" min="0" max="59" value="0">seconds<span id="s3Status"></span><span id="s3timer" data-timer=0></span><br>
+
+Station 4<label class="switch"><input type="checkbox" id="s4" data-station="4"><div class="slider round"></div></label>
+  <input type="number" id="s4minutes" min="0" value="0">minutes<input type="number" id="s4seconds" min="0" max="59" value="0">seconds<span id="s4Status"></span><span id="s4timer" data-timer=0></span><br>
+
+Station 5<label class="switch"><input type="checkbox" id="s5" data-station="5"><div class="slider round"></div></label>
+  <input type="number" id="s5minutes" min="0" value="0">minutes<input type="number" id="s5seconds" min="0" max="59" value="0">seconds<span id="s5Status"></span><span id="s5timer" data-timer=0></span><br>
+
+Station 6<label class="switch"><input type="checkbox" id="s6" data-station="6"><div class="slider round"></div></label>
+  <input type="number" id="s6minutes" min="0" value="0">minutes<input type="number" id="s6seconds" min="0" max="59" value="0">seconds<span id="s6Status"></span><span id="s6timer" data-timer=0></span><br>
+
+Station 7<label class="switch"><input type="checkbox" id="s7" data-station="7"><div class="slider round"></div></label>
+  <input type="number" id="s7minutes" min="0" value="0">minutes<input type="number" id="s7seconds" min="0" max="59" value="0">seconds<span id="s7Status"></span><span id="s7timer" data-timer=0></span><br>
+
+Station 8 <span class="master">Master Valve</span><span id="s8Status"></span>
+
+<br>
+
+<button>Start</button>
+<br>
+Simultaneous Run<input type="checkbox" id="simul">
+
+<script src="valves.js"></script>
+</body>
+</html>
